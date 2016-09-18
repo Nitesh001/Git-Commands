@@ -1,0 +1,43 @@
+1. Distributed VCS (Version Control System).
+
+2. Uses:
+Branching,
+Merging,
+Commiting,
+Push and Pull
+
+3. SVN is centralised version control (like, CVCS) but git is a distributed version control system (DVCS).
+
+4.Basic GIT commands:
+init, status, add, commit, log, push, pull, merge
+
+5.To get local copy of any repository use git clone
+git clone http://---repository_path---
+
+6. To add file to a staging area. Use:
+git add fileName or git add . (For everything)
+
+7. To commit content in staging area,
+git commit -m "Message for commit"
+
+8. To push changes to the remote repository finally, use:
+git push origin
+
+9. To get status whether there is anything to be committed.
+git status
+
+10. Three states in Git project
+Modifies, Staged and Committed
+
+11. To initialize empty git repository, use:
+git init
+
+After git init, the directory should have '.git' file.
+
+12) To add remote repo in local, use:
+git remote add origin GIT_REPO_PATH. (This links between remote repository and local repository).
+
+
+
+
+
