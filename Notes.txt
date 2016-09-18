@@ -21,7 +21,7 @@ git add fileName or git add . (For everything)
 git commit -m "Message for commit"
 
 8. To push changes to the remote repository finally, use:
-git push origin
+git push origin master
 
 9. To get status whether there is anything to be committed.
 git status
