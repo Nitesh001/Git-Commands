@@ -37,6 +37,55 @@ After git init, the directory should have '.git' file.
 12) To add remote repo in local, use:
 git remote add origin GIT_REPO_PATH. (This links between remote repository and local repository).
 
+13) To undo the file from staging area:
+git reset HEAD index.html
+
+14) To uncomit a file from a committed section
+git reset --soft HEAD~1
+
+15) Undoing a pushed change
+git revert HEAD. It opens an editor.
+I reverts all local changes to the beginning and now you can push changes again as git push origin master.
+
+16) To see git logs in a beautiful way:
+git log --pretty=oneline
+
+17) To see difference between files:
+git diff <FILE_NAME>
+
+18) To update content in local repo:
+git fetch // It fetches content in local repository
+get merge origin/master //It merges changes fetched from remote.
+
+19) Git pull:
+It is a combination of git fetch and git merge commands:
+git pull origin master
+
+20) To list out all branches:
+git branch -a
+
+21) create new branch:
+git branch <branch_name>
+
+22) To switch to new branch:
+git checkout <branch_name>
+
+23) To create and switch in a single command:
+git checkout -b <branch_name>
+
+24) To rename branch:
+git branch -m <old_branch_name> <new_branch_name>
+
+25) To delete a branch:
+First switch to some other branch because current branch can't be deleted.
+git branch -d <brance_to_be_deleted>
+
+26) Merging of branches:
+git merge
+git merge <branch_name>
+
+
+
 
 
 
