@@ -27,7 +27,7 @@ git push origin master
 git status
 
 10. Three states in Git project
-Modifies, Staged and Committed
+Modified, Staged and Committed
 
 11. To initialize empty git repository, use:
 git init
@@ -83,6 +83,51 @@ git branch -d <brance_to_be_deleted>
 26) Merging of branches:
 git merge
 git merge <branch_name>
+
+This will mere a new branch into current branch.
+Lets suppose current branch is master and new branch is NEW_BRANCH so this NEW_BRANCH will be merged to master as
+
+git merge NEW_BRANCH
+
+27) git merge not fast forward:
+git merge --no-ff <branch to be merged>
+
+28) To delete a branch locally:
+git branch -d <branch_name>
+Remember, current branch can't be deleted.
+
+29) To delete a branch from github:  
+git push origin --delete <branch_name>
+
+30) Rebasing in git:
+
+31) See git log:
+git log
+git log --pretty=oneline	//To see git history in single line
+
+git log --author=<DEV_NAME> //To see git history by a single user
+
+git log --graph --decorate --oneline	//To see git commits with all branch name and comment
+
+git log -n 1	//To see most recent commit history
+
+git show <COMMIT_NO>	//To see what actually was committed with previous and current changes, COMMIT_NO you can get from git log -n <NO>
+
+git diff <branch1> <branch2>	//It shows different between two branches
+
+31) Github cloning:
+git clone <repository_path>		//To clone a particular directory in local system. It is not checking out  repository in local, it just gives you a copy of particular project.
+
+32) Github forking:
+It just copies/makes available some other project in your account.
+For eg, go to Twitter bootstrap project and 'fork' it. Now Twitter Bootstrap project will be available in your account now.
+
+33) Pull request in Github:
+When somebody else wants to make changes in your project they will pull their changes and you wil recieve pull request. Similarly, when you want to make changes in somebody's projects you will pull your changes and they will recieve pull request in their account.
+
+34) 
+
+
 
 
 
